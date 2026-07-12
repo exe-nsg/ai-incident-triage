@@ -1,5 +1,12 @@
+from database import get_connection
+
+
 def main():
-    print("AI Incident Triage System started")
+    connection = get_connection()
+
+    print("Connected to PostgreSQL successfully")
+
+    connection.close()
 
 
 if __name__ == "__main__":
